@@ -22,7 +22,7 @@ class Checker:
             "q": self.sentence,
             "hl": "en",
             "gl": "us",
-            "api_key": "fd2516b483fd61b044bfb63d5873905c2cdd332921c97461801b16d41437a322"
+            "api_key": "xxxxxx"
         }
         search = GoogleSearch(params)
         results = search.get_dict()
@@ -41,7 +41,7 @@ class Checker:
         headers = {
             'content-type': "application/x-www-form-urlencoded",
             'x-rapidapi-host': "dnaber-languagetool.p.rapidapi.com",
-            'x-rapidapi-key': "3d0c2abca0msh65cf4b8e3c12c06p1a1381jsnc31a6c09bace"
+            'x-rapidapi-key': "xxxxxx"
         }
 
         response = requests.request("POST", url, data=payload.encode("utf-8"), headers=headers)
@@ -56,7 +56,7 @@ class Checker:
     1,000 transactions free per month 
     '''
     def bing_correct(self):
-        api_key = "ea7c737ee752479fa1cc9fac42dcb298"
+        api_key = "xxxxxx"
         res_sentence = self.sentence
         endpoint = "https://api.bing.microsoft.com/v7.0/spellcheck"
         data = {'text': self.sentence}
